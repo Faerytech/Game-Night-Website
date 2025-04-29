@@ -657,7 +657,24 @@ button:hover {
     }
   }
 }
+@media (min-width: 1000px) {
+  .event {
+    height: auto; 
+    min-height: 500px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+  }
 
+  .event img {
+    width: 100%;     
+    height: 220px;    
+    object-fit: cover; 
+    margin-bottom: 15px;
+  }
+}
 /* ------------- LOCATION ------------- */
 
 .location-details {
@@ -737,6 +754,43 @@ button:hover {
   box-shadow: 0 0 12px #3b1623;
 }
 
+@media (min-width: 1000px) {
+  .menu-table {
+    max-width: 1200px; 
+    width: 100%;       
+    margin: 0 auto;   
+    border-collapse: collapse;
+    background-color: #c9707a;
+    box-shadow: #3b1623 0px 0px 10px;
+    border-radius: 5px;
+    color: #683c4b;
+  }
+
+  .menu-table th,
+  .menu-table td {
+    padding: 14px;
+    font-size: 1.4em;
+  }
+}
+@media (min-width: 1400px) {
+  .menu-table {
+    max-width: 1400px; 
+    width: 100%;       
+    margin: 0 auto;   
+    border-collapse: collapse;
+    background-color: #c9707a;
+    box-shadow: #3b1623 0px 0px 10px;
+    border-radius: 5px;
+    color: #683c4b;
+  }
+
+  .menu-table th,
+  .menu-table td {
+    padding: 18px;     
+    font-size: 1.6em;  
+  }
+}
+
 /* ------------- FOOTER ------------- */
 footer {
   background: #241916;
@@ -766,3 +820,5 @@ input[type="radio"],
 button[type="submit"] {
   cursor: url("../assets/videogames2.png") 8 8, pointer;
 }
+
+/* ------------- END OF CSS ------------- */
